@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Menu.Second Page</title>
+<meta charset="utf-8">
+<meta name="description" content="Your English, menu. Site for learning English " />
+<meta name="robots" content="noodp" />
+<meta name="keywords" content="English words, exercises, learning English words, English language, Your English" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>	
+body {
+margin: 0;
+text-align: center;
+background:#19ad9f8c;
+text-shadow: !0 1px 0 #f3f3f3;
+font-family: Roboto Condensed, Тahoma, sans-serif;
+}
+h1 {
+color:#252d2f;
+font-size: 2.3rem;
+font-weight: 600;
+weight:100%;
+transition: 2s;
+}
+h1:hover{
+color:white;
+font-size: 2.4rem;
+transition: 2s;
+}
+h2 {
+color: white;
+font-size: 1.5rem;
+font-weight: 600;
+transition: 2s;
+padding-top: 1.4rem;
+}
+h2:hover{
+color:#ab1515;
+}
+.box {
+perspective: 500px;
+transform: rotateX(180deg);
+border-radius: 5px;
+}
+#box1 {
+background-color:rgba(1, 157, 178, 0.39);
+width: 23rem;
+height: 5rem;
+margin: auto;
+    border-radius: 1rem;
+    box-shadow: inset 5px 1px 12px 9px #486b61;
+}
+#box1:hover{
+background-color:#f3cfceba;;
+}
+.style-flat {
+transform-style: flat;
+}
+.style-3d {
+transform-style: preserve-3d;
+}
+.flip1,.flip2,.flip3,.flip4,.flip5,.flip6 {
+padding-top: 3vw;
+text-align:center;
+margin-top: 1rem;
+margin-left: auto;
+margin-right: auto;
+height: 28rem;
+width: 39.8rem;
+transform: rotateX(-180deg);
+border-radius: 5px;
+background: url(images/1s.jpg) no-repeat -1rem;
+background-size: 45rem;
+-webkit-animation: rotate 5s;
+animation: rotate 5s;
+-webkit-box-shadow: 21px 18px 5px 1px rgba(39, 55, 67, 0.17);
+-moz-box-shadow: 21px 18px 5px 1px rgba(39, 55, 67, 0.17);
+box-shadow: 21px 18px 5px 1px rgba(39, 55, 67, 0.17);
+-webkit-transition: 2s ease; /* Safari and Chrome */
+-moz-transition: 2s ease; /* Firefox 4 */
+-o-transition: 2s ease; /* Opera */
+}
+.flip2{
+background: url(images/2s.jpg) no-repeat -1rem;
+-webkit-animation: rotate 1s;
+animation: rotate 1s;
+}
+.flip3{
+background: url(images/3s.jpg) no-repeat -1rem;
+-webkit-animation: rotate 7s;
+animation: rotate 7s;
+}
+.flip4{
+background: url(images/4s.jpg) no-repeat -1rem;
+-webkit-animation: rotate 2s;
+animation: rotate 2s;
+}
+.flip5{
+background: url(images/5s.jpg) no-repeat -1rem;
+-webkit-animation: rotate 8s;
+animation: rotate 8s;
+}
+.flip6{
+background: url(images/6s.jpg) no-repeat -1rem;
+-webkit-animation: rotate 1s;
+animation: rotate 1s;
+}
+@keyframes rotate {
+50% {
+transform: none;
+}}
+a {
+color:white;
+text-decoration: none;
+font-weight: 700; 
+line-height: 2;
+}
+a:hover{
+text-decoration: none;
+}
+#tcr{
+height: 8vw;
+width: 33rem;
+margin: auto;
+background-color: rgba(0, 255, 221, 0.49);
+border-radius: o.6rem;
+border-radius: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+    box-shadow: inset -1px 2px 11px 9px #0fffe6;
+}
+#tcr1{
+height:8vw;
+background:rgba(6,750,520,0.3);
+}
+#tcr:hover,#tcr1:hover{
+background:rgb(48 234 157 / 70%);
+}
+.col-lg-4{
+height:32rem;
+}
+@media (min-width: 667px ) and (max-width: 1030px) {
+				h1{
+				font-size: 1.7rem;
+				}
+				h1:hover{
+				font-size: 1.8rem;
+				}
+				}
+				@media (min-width: 320px ) and (max-width: 667px) {
+				#tcr1 {
+				height: 18vw;
+				}
+				#tcr {
+				height: 13vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				}
+				.flip1, .flip2, .flip3, .flip4, .flip5, .flip6 {
+				width: 29rem;
+				}
+				#tcr {
+				width: 28rem;
+				}
+				h1{
+				font-size: 1.6rem;
+				margin-top: 10px;
+				}
+				h1:hover {
+				font-size: 1.6rem;
+				}
+				}
+		@media (min-width: 240px ) and (max-width: 319px) {
+		.flip1,.flip2,.flip3,.flip4,.flip5,.flip6 {
+		height: 13rem;
+		width: 19rem;
+		}
+		#tcr {
+		height: 5rem;
+		width: 17rem;
+		}
+		#box1{
+		width: 17rem;
+		height: 3.5rem;
+		}
+		h1{
+		font-size: 1.3rem;
+		margin-top: 10px;
+		}
+		h1:hover{
+		font-size: 1.4rem;
+		}
+		h2{
+		font-size: 1.1rem;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		padding-top: 0.4rem;
+		}
+		.col-lg-4 {
+		height: 16rem;
+		}
+		}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-4" >
+<section>
+<div class="box style-flat">  
+<div class="flip1">
+<div id="tcr"  ><a href="English_words.html" ><h1>1.Английские слова<br>Предлоги</h1></a>
+</div>
+<div id='box1'>
+<a href="English_word_exer.html" ><h2>Упражнения для закрепления  </h2></a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="col-lg-4" >
+<section>
+<div class="box style-flat">  
+<div class="flip2" >
+<div id="tcr"  ><a href="Frasal_ver.html" ><h1>2.Фразовые глаголы</h1></a>
+</div>
+<div id='box1'>
+<a href="Frasal_ver_exer.html"  ><h2 >Упражнения для закрепления  
+</h2></a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="col-lg-4" >
+<section>
+<div class="box style-flat">  
+<div class="flip3">
+<div id="tcr"  ><a href="Environmental.html" ><h1>3.Окружающая среда <center>Экология</center></h1>
+</a>
+</div>
+<div id='box1'>
+<a href="Environmental_exer.html"  ><h2>
+Упражнения для закрепления  
+</h2></a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4" >
+<section>
+<div class="box style-flat">  
+<div class="flip4">
+<div id="tcr"  ><a href="Interview.html" ><h1>4.Слова и фразы <center>для подготовки к собеседованию</center></h1></a>
+</div>
+<div id='box1'>
+<a href="Interview_exer.html" ><h2>Упражнения для закрепления  </h2></a>
+</div></div>
+</div>
+</section>
+</div>
+<div class="col-lg-4" >
+<section>
+<div class="box style-flat">  
+<div class="flip5">
+<div id="tcr"  ><a href="Geography.html" ><h1>5.География</h1></a>
+</div>
+<div id='box1'>
+<a href="Geography_exer.html" ><h2>Упражнения для закрепления  </h2></a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="col-lg-4" ><section>
+<div class="box style-flat">  
+<div class="flip6">
+<div id="tcr"  ><a href="Spice.html" ><h1>6.Космос</h1></a>
+</div>
+<div id='box1'>
+<a href="Spice_exer.html" ><h2>Упражнения для закрепления  </h2></a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>	
+<script>
+</script>
+</body>
+</html>

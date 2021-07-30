@@ -1,0 +1,192 @@
+body {
+margin: 0;
+text-align: center;
+background-color: black;
+
+}
+#img{  width: 80%;
+    width: 80%;
+    border-radius: 2rem;
+    border: 5px solid #ee6262;
+}
+td, th {
+padding: 1px;
+text-align: center;
+}
+button, input, optgroup, select, textarea {
+margin: 6px;
+}
+#lesson {
+	margin-top: 7rem;
+}
+#price{
+	color:aqua;
+}
+input
+{
+	color: #0f0f0f;
+font-size: 1.1rem;
+text-align:center;
+width: 60%;
+height: 3rem;
+border-radius: 5px;
+margin-bottom: -1rem;
+}
+h2 {
+font-size: 2rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+ 
+}
+h5{
+color: coral;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+margin-top: 1rem; 
+margin-bottom: 1rem;
+color:aqua;
+}
+#table_2{
+background-color: #209021f5;
+width: 90%;
+border-radius: 12px;
+margin-left: 2rem;
+margin-top: 1rem;
+}
+#th_table_2{
+background-color:yellow;	
+border-radius: 1rem;	
+}
+#comment3{
+height: 7rem;	
+}
+.btn-primary {
+margin-top: 2rem;
+width: 15rem;
+}
+.btn-danger {
+width: 40%;
+height: 4rem;
+}
+table{
+ margin-top: 6rem;
+}
+#table_1{
+background-color: rgba(231, 55, 122, 0.4);
+width: 30%;
+}
+#shop_table1{
+background-color:pink;
+}
+h6{
+text-align: left;
+}
+.form-control {
+width: 90%;	
+}
+@media (min-width: 1280px ) and (max-width:1280px) 
+{
+td, th {
+padding: 1px;	
+}
+}
+@media (min-width: 741px ) and (max-width:1000px) 
+{
+#table_2 {
+width: 60%;
+}	
+}
+
+@media (min-width: 568px ) and (max-width:896px) 
+{
+#table_2 {
+width: 60%;
+}
+h5{
+	padding-right: 0.2rem;
+padding-left: 0.2rem;
+	font-size: 1.5rem;
+	margin-top: 1rem
+}	
+#img {
+        width: 96%;
+}
+#lesson {
+    margin-top:4%;
+}
+table {
+    margin-top: 0.2rem;
+}
+h2 {
+font-size: 1.5rem;}
+.h4, h4 {
+    font-size: 1.3rem;
+}
+h5{
+	font-size: 1.2rem;
+}	
+}
+@media (min-width: 240px ) and (max-width:320px) 
+{
+	#lesson {
+    margin-top: 0.2rem;
+}
+table {
+    margin-top: 0.1rem;
+}
+.btn-primary {
+margin-top: 1rem;
+width: 7rem;
+}
+#img {
+width: 90%;
+border-radius: 1rem;
+border: 2px solid #ee6262;
+}
+.h5, h5 {
+     font-size: 0.4rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+input {
+width: 90%;
+height: 2rem;
+font-size: 0.7rem;
+}
+.btn {
+padding: 1px 1px;
+font-size: 7px;
+}
+h2 {
+font-size: 1.3rem;
+}
+.h4, h4 {
+font-size: 10px;
+}
+.h6, h6 {
+font-size: 10px;
+}
+b, strong {
+font-size: 1rem;
+}
+#table_2 {
+margin-top: 1rem;	
+}
+.h4, .h5, .h6, h4, h5, h6 {
+margin-top: 2px;
+margin-bottom: 2px;
+}
+#table_2 {
+margin-left: 1rem;
+}
+button, input, optgroup, select, textarea {
+margin: 1px;}
+#comment3 {
+height: 4rem;
+}
+}

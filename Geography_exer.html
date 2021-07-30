@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Geography</title>
+<meta charset=utf-8 >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link href="exer.css" rel="stylesheet">
+<style>
+#rum{
+text-align: center;
+}    
+ 
+</style>
+</head>
+<div id='htmy'></div>
+<script>
+var m = 'Move words in Russian into the area of words in English, equal in meaning';
+var move_rus = 'Перенесите слова на русском языке в область слов на английском языке, равных по смыслу';
+var arr1=[
+'Atlantic Ocean',
+'Indian Ocean',
+'Pacific Ocean',
+'Arctic Ocean',
+'Southern Ocean',
+'Eurasia',
+'North America',
+'South America',
+'Africa',
+'Australia',
+'Antarctica',
+'capital city'
+];
+var arr2=[ 
+'Атлантический океан',
+'Индийский океан',
+'Тихий океан',
+'Северный Ледовитый океан',
+'Южный океан',
+'Евразия',
+'Северная Америка',
+'Южная Америка',
+'Африка',
+'Австралия',
+'Антарктида',
+'столица'
+];
+var hei = '3rem';
+var wid = '6rem';
+var arr4=[];
+var draging=1;
+var draging_pr=$('#rum').css({'background-color':'pink', 'width':'14rem','font-size': '1rem',
+'text-align':'center',	'line-height':'0.8', 'height':'3.5rem', 'padding-right': '0.2rem',
+'padding-left': '0.2rem'});
+</script>
+<script src='modul/dom1.js'></script>
+<script src='modul/rum.js'></script>
+</body>
+</html>

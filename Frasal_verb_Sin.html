@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Phrasal verbs with synonyms</title>
+<meta charset=utf-8 >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="int.geog.sp.css" rel="stylesheet">
+<link href="css/menu1.css" rel="stylesheet">
+<script src='array/sin.ver.js'></script>
+</head>
+<div id='menu' style="display:none"></div>
+<center>
+<div id='frase'><center><h1>Phrasal verbs with synonyms</h1></center></div>
+<div class="ui-grid-b">
+<div class="ui-block-a"><div class="ui-bar-b" style="background-color:#00800000;border-color: #ddd0;"></div></div>
+<div class="ui-block-b"><div class="ui-bar-b" style="background-color:#00ffff54;border-color: #ddd0;">
+<center>
+<div id='demo' style="display:none"><div id='demo2'></div></div>
+</center>
+</div></div>
+<div class="ui-block-c"><div class="ui-bar-b" style="background-color:#00800000;border-color: #ddd0;"></div></div>
+<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="background-color:transparent;border-color:#ddd0;">
+</div></div>
+<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="background-color:#00f8ff7a;height: 100%; position: inherit;border-color: #ddd0;">
+<center>
+<div id="slider1" >
+<div class="input-group">
+<button id="prev" class="btn btn-primary" style="display:none" >prev</button>
+<div id='elem'  style="display:none"><div id='elem2' ></div></div>
+<button id="next" class="btn btn-primary" style="display:" >Начать изучение!</button>
+</div>	</div> 
+<CENTER>
+<center>
+<div id='offer' style="display:none">
+<h5>перейти к упражнениям?
+<div id='yes'>
+<a href="Frasal_verb_Sin_exer.html" rel="external">
+да
+</a>
+</div>
+<div id='noy' >нет</div>
+</h5>
+</div>
+</center>
+<div id='box5'>
+<h3 style="display:none;">Введите слово на английском языке &dArr;
+<textarea  cols="22" rows="2"     id='enter' value=''/></textarea>
+<img id="img" src="images/dol5.png" style="display:none ;">
+<button id="check" style='display:none;'>проверь результат!</button>
+</div >
+</CENTER>
+</div>
+</div>
+<div class="ui-block-c"><div class="ui-bar ui-bar-a" style="background-color:transparent;border-color: #ddd0;">
+</div>
+</div>
+</div>
+<script>
+$('h1').hover(function(){
+$(this).text("Phrasal verbs with synonyms").css({'color':'#a9ff00'});
+}, function() {
+$(this).text("Фразовые глаголы с синонимами").css({'color':'#fdfdfd'});
+});
+count=0;
+initSlider(arr1, '#slider1');
+function initSlider(texts, selector) {
+function fG(){
+count++;
+if ((count== texts.length )||(count== texts.length+texts.length)||(count== texts.length+texts.length+texts.length))
+{oF();}
+}
+var parent = document.querySelector(selector);
+var elem = parent.querySelector('#elem2');
+var prev = parent.querySelector('#prev');
+var next = parent.querySelector('#next');
+var i = 0;
+next.addEventListener('click', function () {
+i++;
+enter.value='';
+$("#check").text( "введите слово" ).css('background','Tomato');
+{if (i == texts.length)
+{i = 0; }
+elem.innerHTML = texts[i]; 
+}
+{if (elem.innerHTML == texts[i])
+{
+document.getElementById("demo2").innerHTML =arr3[i];
+document.getElementById("elem2").innerHTML =arr1[i]+'/<br>'+arr2[i];
+}}	
+{
+fG();
+}
+});
+check.addEventListener('click', function (event)
+{	
+if ((arr1[i]+'/'+arr2[i]==enter.value)||(arr1[i]+'/<br>'+arr2[i].toLowerCase()==enter.value.toLowerCase()))
+{
+$( '#check' ).text( "Ответ верный" ).css('background','green');
+$("#img").show(1000);
+}
+else {
+$("#input").show(1000);
+$( '#check' ).text( "Попробуйте еще раз" ).css('background','#d65b18');
+}
+}
+);
+prev.addEventListener('click', function() {
+i--;
+if (i == -1) {
+i = texts.length - 1;
+}
+elem.innerHTML = texts[i];
+{if (elem.innerHTML == texts[i])
+{
+document.getElementById("demo2").innerHTML =arr3[i];
+document.getElementById("elem2").innerHTML =arr1[i]+'/<br>'+arr2[i];
+$("#check").text( "введите слово" ).css('background','Tomato');
+enter.value='';
+}}
+{	fG();
+}
+});  
+}
+</script>
+<script src='modul/dom.js'></script>
+</body>
+</html>

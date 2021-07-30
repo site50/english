@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>First page English lunguage</title>
+<meta charset="utf-8">
+<meta name="description" content="Your English. Site for learning English " />
+<meta name="robots" content="noodp" />
+<meta name="keywords" content="English words, exercises, learning English words, English language, Your English" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+background-color: black;
+text-align: center;
+height:100%;
+}
+* {
+padding: 0;
+margin: 0;
+}
+html, body {
+height: 100%;
+width: 100%;
+}
+.trns-text {
+padding-top: 9rem;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-ms-text-fill-color: transparent;
+-ms-background-clip: text;
+display:block;
+font-size: 200px;
+font-family: arial;
+text-align: center;
+margin-top: -20px;
+font-weight: bold;
+letter-spacing: -25px;
+background-size: cover;
+}
+.non-trns {
+color: #000;
+margin-top: -200px;
+text-align: center;
+font-family: calibri;
+font-size: 25px;
+}
+#box{
+padding-top:5rem;
+z-index: 2;
+color: white;
+font-size: 13vw;
+background: url(images/beach.jpg) repeat -32rem -13rem;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-ms-text-fill-color: transparent;
+-ms-background-clip: text;
+font-size: 15vw;
+font-weight: 1000;
+text-shadow: 2px 3px 8px rgba(59, 37, 17, 0.35) inset;
+filter: drop-shadow( 10px 5px 2px aqua );
+line-height: 1;
+transition: 2s ease;
+-webkit-transition: 2s ease; /* Safari and Chrome */
+-moz-transition: 2s ease; /* Firefox 4 */
+-o-transition: 2s ease; /* Opera */
+-ms-transition: 2s ease; /* Opera */
+}
+#box:hover {
+background-position: left;
+opacity: 1;
+}
+h5{
+font-size: 3rem;
+padding-top: 3rem;
+background: url(images/beach.jpg) repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+h2{
+font-size: 3rem;
+padding-top: 3rem;
+color:tomato;
+}
+a{
+text-decoration:none;
+-moz-text-decoration-line:none;
+-webkit-text-decoration-line:none;
+}
+a:hover{
+text-decoration:none;
+-moz-text-decoration-line:none;
+-webkit-text-decoration-line:none;
+}
+header { 
+width:100%;
+margin: 0 auto;
+}
+svg { 
+width: 100%;
+}
+svg text {
+font-family: Arvo, Rockwell, sans-serif;
+font-weight: 800;
+text-transform: uppercase;
+font-size: 12rem;
+filter: drop-shadow( 10px 5px 2px aqua );
+}
+.img1 {
+-webkit-clip-path: url(#shape);
+clip-path: url(#shape);
+line-height: 1;
+}
+svg {
+padding: 15rem 1rem;
+filter: url(#effect2);
+}
+h4{
+font-size: 3rem;
+padding-top: 3rem;
+color:coral;
+}
+</style>
+<body>
+<div class="row">
+<div class=" col-md-12">
+<div class="container-fluid">
+<header id='my_header' style="display:none">
+<svg height="100%" width="100%" viewBox="290 41 120 90" contentEditable class="icon"><!--right,top-->
+<image  x="0" width="700" height="240" xlink:href='images/beach.jpg' class='img1' /> 
+<defs>
+<clipPath id="shape" xlink:href="menu.html">
+<text x="113%" y="98%" id='text1'  style="text-decoration:; " >   YOUR 
+</text>
+<text x="39%" y="220%" id='text1'  style="text-decoration:; ">
+ENGLISH
+</text>
+</clipPath>
+</defs>
+</svg>
+<div >
+<a href="menu.html"><h4>Сайт для изучения английского языка. Средний уровень.</a></h4></a>
+<a href="menu.html"><h2 style='display:none;'>Site for learning English. Midle level.</h2></a>
+</div>
+</header>
+<div id='bouser_box' style="display:none;">
+<div id='box'>
+<a href="menu.html">YOUR ENGLISH</a>
+</div>	
+<a href="menu.html"><h5>Сайт для изучения английского языка. Средний уровень.</h5>
+<h2 style='display:none;'>Site for learning English. Midle level.</h2></a>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+$("h5,h4").mouseover(function(){
+$(this).slideUp("slow");
+$('h2').slideDown("1000");
+});
+$("h2").mouseout(function(){
+$(this).slideUp("slow");
+$("h5,h4").slideDown("1000");
+});
+});
+function myFunction() { 
+if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR') || navigator.userAgent.indexOf("Chrome")
+|| navigator.userAgent.indexOf("Safari")||navigator.userAgent.indexOf("Firefox")!= -1 ))
+{
+$(document).ready(function(){
+$("#bouser_box").show(100);
+});
+}
+if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+{
+$(document).ready(function(){
+$("#bouser_box").hide();
+$("#my_header").show();
+});
+}  
+}
+myFunction()
+</script>
+</body>
+</html>

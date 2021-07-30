@@ -1,0 +1,186 @@
+.ui-mobile .ui-page
+{
+background-color: black;
+}
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a
+{
+background: rgba(20, 180, 10, 1 );
+}
+#box7{
+width: 6rem;
+height: 6rem;
+font-size: 1.4rem;	
+}
+.dropdown-menu {
+font-size: 1.2rem;
+}
+.dropdown-submenu {
+padding: 1px;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+margin-left: 0.1rem;	 
+padding: 3px 3px; 
+}
+#submenu2 {
+margin-left: 0.1rem;	 
+}
+#sub {
+margin-left: 15rem;
+}	
+table {
+margin-top: 3rem;
+}
+#form1{
+width:95%;
+background-color:#2a2ab180;
+color:white;
+border-radius: 23px;
+}
+#comment{
+font-size: 18px;
+margin-top: 3rem;
+color: green;
+padding-left: 2rem;
+padding-right: 2rem;
+}
+label {
+margin-bottom: 1px;	
+}
+@media (min-width: 240px ) and (max-width:240px) {
+label {
+    margin-bottom: 1px;
+    font-size: 1rem;
+}
+.form-group {
+    margin-bottom: 1px;
+}
+.form-control {
+      height: 20px;
+	  font-size: 11px;
+}
+#comment {
+    font-size: 12px;
+    margin-top: 1rem;
+}
+.dropdown-menu > li > a {
+line-height: 1rem;	
+}
+.dropdown-menu {
+min-width: 120px;	
+}	
+#sub {
+    margin-left: 11rem;
+}
+.btn-danger {
+    width: 30%;
+    height: 2rem;
+}
+}
+@media (min-width: 320px ) and (max-width:355px) 
+{
+h2{
+margin-left: 6rem;	
+}
+#form1{
+
+}
+input{
+height: 20px;	
+}
+.dropdown-menu > li > a {
+line-height: 1rem;	
+}
+.dropdown-menu {
+min-width: 120px;	
+}	
+#sub {
+    margin-left: 11rem;
+}
+table {
+    margin-top: 0.4rem;
+}
+label{
+	font-weight: 500;
+
+    margin-bottom: 1px;
+    font-size: 1rem;
+}
+.form-control {
+    height: 24px;
+	font-size: 10px;
+}
+.form-group {
+    margin-bottom: 3px;
+}
+.btn-danger {
+    width: 30%;
+    height: 2rem;
+}
+}
+@media (min-width: 360px ) and (max-width:413px) 
+{
+#menu {	
+margin-top: -7.1rem;
+}
+h2{
+margin-left: 4.2rem;		
+}
+#form1{
+width: 95%;
+}
+}
+@media (min-width: 414px ) and (max-width:500px) 
+{
+#menu {
+margin-top:  -7.6rem;
+}
+#sub {
+margin-left: -1rem;
+}
+}
+@media (min-width: 568px ) and (max-width:736px) 
+{
+#sub {
+margin-left: -1rem;
+}
+#menu{
+margin-top: -2rem;
+}
+h2{
+margin-left: 3rem;
+}
+h4{
+margin-left: 1.7rem;
+margin-top: 1rem;	
+}
+#form1{
+	width: 75%;
+}
+}
+@media (min-width: 740px ) and (max-width:896px) 
+{
+#menu {	
+margin-top: -2rem;
+}
+#form1{
+	width: 75%;
+}
+}
+@media (min-width: 900px ) and (max-width:960px) {
+	#form1{
+	width: 75%;
+}
+h2{
+	margin-left: 5rem;
+}
+#menu{
+margin-top: -7rem;
+}
+}
+@media (min-width: 1024px ) and (max-width:1112px) 
+{
+#comment{
+
+}	
+
+}

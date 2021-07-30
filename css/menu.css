@@ -1,0 +1,105 @@
+#menu{
+position:absolute;	
+text-shadow:0 00;
+}
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu
+{top:0;
+left:100%;
+margin-top:-6px;
+margin-left:-1px;
+-webkit-border-radius:0 6px 6px 6px;
+-moz-border-radius:0 6px 6px 6px;
+border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu:hover>
+.dropdown-menu
+{display:block;}
+/* .dropdown-submenu>a:after */
+/* {display:block; */
+/* content:" "; */
+/* float:right; */
+/* width:0; */
+/* height:0; */
+/* border-color:transparent; */
+/* border-style:solid; */
+/* border-width:5px 0 5px 5px; */
+/* border-left-color:#cccccc; */
+/* margin-top:5px; */
+/* margin-right:-10px; */
+/* } */
+/* .dropdown-submenu:hover>a:after */
+/* { */
+/* background-color: #c2dcc7b3; */
+/* box-shadow: inset 1px 0px 15px 4px #2a5234; */
+/* } */
+.dropdown-submenu.pull-left
+{float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu
+{left:-100%;
+margin-left:10px;
+-webkit-border-radius:6px 0 6px 6px;
+-moz-border-radius:6px 0 6px 6px;
+border-radius:6px 0 6px 6px;
+}
+.dropdown-menu>li>a {
+color:white;
+}
+#box7 {
+background-color: rgba(199, 0, 3, 0.73);
+color: #fcfffa;
+width: 6.7rem;
+height: 6.7rem;
+border-radius: 6px;
+border: 3px solid Tomato;
+margin-top: 1rem;
+margin-bottom: 1rem;
+font-size: 2rem;
+text-align: center;
+display: flex;
+}
+#box2{
+margin: auto;
+}
+#box4{
+margin-left:1rem;
+background-color:#fd7373d9;
+}
+.dropdown-menu{
+background-color: #34c10ca1;
+margin-left: 1.2rem;
+box-shadow: 0 6px 22px rgb(61 173 212 / 69%);	
+}
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+color: #211e27;
+background-color: #3af1b29c;
+border-radius: 6px;
+background-color: #c2dcc7b3;
+box-shadow: inset 1px 0px 15px 4px #2a5234;
+}	
+#submenu1
+{  background-color: #2ae0dc99;
+box-shadow: inset 11px 2px 15px 3px #544e4e;
+}
+#submenu1>a:after {
+content:none;	
+}
+#submenu2:hover{
+background-color: #e2554a;
+box-shadow: 1px 0px 15px 4px #f5e35d;
+
+
+}	
+@media (min-width: 414px)and (max-width: 736px)  { 
+.dropdown-menu {
+position: sticky;
+background-color: #34c10ca1;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+background-color: #34c10ca1;
+position: absolute;
+left: 97%;
+}
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Prepositions</title>
+<meta charset=utf-8 >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="css/menu.css" rel="stylesheet">
+<link href="prepos.css" rel="stylesheet">
+<script src='array/preposition.js'></script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row"> 
+<div class=" col-md-3" style='background-color:green;'>
+<div id='frase1' style="display:none"><center><h1>Как употреблять предлоги в английском языке</h1></center></div>
+<div id='menu' style="display:none"></div>
+</div>
+<div class=" col-md-6" style='background-color:#00f8ff7a;position: inherit;'>
+<div id='frase' ><center><h1>Как употреблять предлоги в английском языке</h1></center></div>
+<CENTER>
+<button id="begin"  >Начать изучение!</button>
+<div id="slider1" >
+<div id='box3' style="display:none">
+<h2>Падеж:</h2><div id='prepos' ></div>
+</div>
+<div class="input-group" >
+<CENTER>
+<button id="prev" class="btn btn-primary" style="display:none" >prev</button>
+<div id='elem'  style="display:none"><div id='elem1' ></div></div>
+<div id='demo' style="display:none">
+<div id="demo1">
+<div id='n'></div>
+<div id='n1'></div>
+<div id='n2'></div>
+</div>
+</div>
+<button id="next" class="btn btn-primary" style="display:none" >next</button>
+</CENTER>
+</div>
+</div> 
+</CENTER>
+<center><div id='offer' style="display:none">
+<h5>перейти к упражнениям?
+<div id='yes'>
+<a href="Preposit_exer.html" >
+да
+</a>
+</div>
+<div id='noy' >нет</div>
+</h5>
+</div></center>
+<div id='box5' style="display:none;" >
+<center>
+<div id='text' onclick="dR()"  >
+<h3>Введите предлог в &dArr;: </h3><h3 id='pos'>hello</h3>
+</div> 
+</center>
+<input    id='enter' value=''/></br>
+<button id="check" >проверь результат!</button>
+</div >
+<div id='input'></div>
+</center>
+</div>
+<div class=" col-md-3" >
+<div id='error'></div><img id="img" src="images/dol5.png" style="display:none ;">
+</div>
+</div>
+</div>
+<script src='modul/menu.js'></script>
+<script>
+count=0;
+var a=9;
+$(document).ready(function(){
+$("#begin").click(function(){
+$("#prev,#box5,#elem,#demo,#next,#demo,#img,#menu,#box3,#frase1").show(1000);
+$('#begin,#frase').hide();
+$("#next").css({'background-color':'SkyBlue'});
+$("#box2").click(function(){
+$('#box1').toggle(1000);
+});
+});
+$('h1').hover(function(){
+$(this).text("How to use prepositions in the English language").css({'color':'#a9ff00'});
+}, function() {
+$(this).text("Как употреблять предлоги в английском языке").css({'color':'black'});
+});
+initSlider(arr2, '#slider1');
+function initSlider(texts, selector) {
+var parent = document.querySelector(selector);
+var elem = parent.querySelector('#elem1');
+var prev = parent.querySelector('#prev');
+var next = parent.querySelector('#next');
+var i = 0;
+begin.addEventListener('click', function () {
+i++;
+{if (i == texts.length)
+{i = 0; }
+elem.innerHTML = texts[i];
+document.getElementById("n").innerHTML =arr1[i].n;
+document.getElementById("n1").innerHTML =arr1[i].n1;
+document.getElementById("n2").innerHTML =arr1[i].n2;
+document.getElementById("prepos").innerHTML =arr3[i];
+document.getElementById("pos").innerHTML =arr4[i];
+}
+next.addEventListener('click', function () {
+i++;
+{if (i == texts.length)
+{i = 0; }
+elem.innerHTML = texts[i]; 
+}
+{if (elem.innerHTML == texts[i])
+{
+document.getElementById("prepos").innerHTML =arr3[i];
+document.getElementById("n").innerHTML =arr1[i].n;
+<!-- console.log(arr1[i].n+',NEXT'+arr1[i].n1); -->
+document.getElementById("n1").innerHTML =arr1[i].n1;
+document.getElementById("n2").innerHTML =arr1[i].n2;
+document.getElementById("pos").innerHTML =arr4[i];
+document.getElementById("next").innerHTML = 'next';
+document.getElementById("input").style.display='none';
+document.getElementById("error").style.display='none';
+document.getElementById("box1").style.display='none';
+enter.value='';
+}}	
+{count++;
+if ((count== texts.length )||(count== texts.length+texts.length)||(count== texts.length+texts.length+texts.length))
+{
+document.getElementById("offer").style.display='block';
+document.getElementById("box5").style.display='none';
+{document.getElementById('offer')
+.addEventListener('click', event => { // Step 2
+if (event.target.id === 'yes') { // Step 3
+document.getElementById("offer").style.display='block';
+}
+if (event.target.id === 'noy') { // Step 3
+document.getElementById("offer").style.display='none';
+document.getElementById("box5").style.display='block';
+}
+});
+}
+}
+}
+});
+let check = document.querySelector('#check');
+check.addEventListener('click', function (event) {
+console.log(arr1[i].n+arr1[i].n1+arr1[i].n2);
+if (arr1[i].n1==enter.value)
+{console.log(arr1[i].n+',CHECK3'+arr1[i].n1);
+$("#input, #error").show(1000)
+$( '#error' ).text( "Ответ верный!" );
+}
+else {document.getElementById("error").innerHTML='Неверно, попробуйте еще раз';}
+document.getElementById("error").style.display='block';
+});
+});
+prev.addEventListener('click', function() {
+i--;
+if (i == -1) {
+i = texts.length - 1;
+}
+elem.innerHTML = texts[i];
+{if (elem.innerHTML == texts[i])
+{
+document.getElementById("n").innerHTML =arr1[i].n;
+document.getElementById("n1").innerHTML =arr1[i].n1;
+document.getElementById("n2").innerHTML =arr1[i].n2;
+document.getElementById("prepos").innerHTML =arr3[i];
+document.getElementById("pos").innerHTML =arr4[i];
+document.getElementById("input").style.display='none';
+document.getElementById("error").style.display='none';
+document.getElementById("box1").style.display='none';
+enter.value='';
+}}  });}
+});
+</script>
+</body>
+</html>
