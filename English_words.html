@@ -13,6 +13,338 @@
 <link href="int.geog.sp.css" rel="stylesheet">
 <link href="css/menu1.css" rel="stylesheet">
   <style>
+    body{
+font-family: Georgia !important;
+text-align:center;
+}
+.ui-mobile .ui-page
+{
+background: url(images/beach.jpg) no-repeat;
+  text-shadow: 0px 0px;	
+}
+.ui-bar-b, .ui-page-theme-b .ui-bar-inherit, html .ui-bar-b .ui-bar-inherit, html .ui-body-b .ui-bar-inherit, html body .ui-group-theme-b .ui-bar-inherit {
+    text-shadow: 0px 0px;	
+}
+
+
+#frase{
+height: 2rem;
+margin-top: -1rem;
+margin-bottom: 1rem;
+}
+#enter{
+text-align:center;
+    height: 77px;
+width: 33rem;
+border-radius: 23px;
+font-size: 1.5rem;
+font-family: Georgia !important;
+border: 5px solid #4794ff;
+}
+#enter:focus{
+background-color: #ffc5c0c7;
+border-radius: 23px;
+border: 5px solid #ff47db;
+color: #09070a;
+}
+.ui-btn, label.ui-btn {
+    font-weight: 500;
+}
+#next,#prev,#check{
+text-shadow: 0 0 0 #00000000 !important;
+margin-top: 0.2rem;
+background-color:tomato;
+color:white;
+font-size: 2rem;
+width: 10rem;
+margin-right: auto;
+margin-left: auto;
+border: 2px solid #4CAF50;
+}
+#prev{
+font-family: Georgia !important;
+background-color:SkyBlue;
+font-size: 1.3rem;
+}
+#next,#check{
+font-family: Georgia !important;
+width: 25rem;
+margin-top: 0.2rem;
+    position: relative;
+}
+#elem{
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+background-color: limegreen;
+color: #082315;
+height: 5rem;
+border-radius: 23px;
+border: 5px solid #ee6262;
+margin-top: 0.2rem;
+margin-bottom: 1rem;
+width: 33rem;
+font-size: 1.5rem;
+text-align: center;
+display: flex;
+font-weight: 500;
+  
+}
+#elem1,#elem2{
+margin: auto;
+}  
+#demo{
+padding-right: 0.5rem;
+padding-left: 0.5rem;
+background-color: limegreen;
+height: 4rem;
+border-radius: 23px;
+margin-top: -0.79rem;
+margin-bottom: 1rem;
+width: 34rem;
+font-size: 1.5rem;
+text-align: center;
+display: flex;
+    font-weight: 500;
+	
+	
+}
+#demo1,#demo2{
+margin: auto;
+}
+h3{
+font-size: 1.6rem;
+}
+
+#img{
+    width: 7rem;
+    margin-top: -6rem;
+    margin-left: 14rem;
+    position: absolute;
+}
+
+
+h1{
+text-shadow: 0 0 0 #00000000 !important;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1;
+	color:white;
+}
+h2{
+color:#184850;}
+.ui-grid-b{
+text-align:center;
+}
+.ui-bar-a
+{
+text-align:center;
+}
+.ui-bar-b{
+height: 4rem;
+padding-top: 1rem;
+text-align: center;
+}
+.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-c {
+width: 25%;
+}
+.ui-grid-b>.ui-block-b {
+width: 50%;
+}
+.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-c {
+width: 25%;
+}	
+.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-c {
+width: 25%;
+}
+.ui-grid-b>.ui-block-b {
+width: 50%;
+}
+#offer{
+background-color: #e80312ba;
+height: 8rem;
+width: 22rem;
+font-size: 1.3rem;
+border-radius: 23px;
+color: white;
+padding-top: 0.3rem;
+}
+#yes{
+background-color: #cbe61d;
+width: 9rem;
+padding-top: 0.1rem;
+padding-bottom: 0.3rem;
+border-radius: 23px;
+margin-top: 0.4rem;
+}
+#noy{
+background-color: #800003;
+width: 9rem;
+padding-top: 0.1rem;
+padding-bottom: 0.3rem;
+border-radius: 23px;
+margin-top: 1rem;
+}
+@media (min-width: 240px ) and (max-width: 319px) 
+{
+.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-c {
+width: 3%;
+}
+.ui-grid-b>.ui-block-b {
+width: 94%;
+}	
+.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-c {
+width: 3%;
+}
+body{
+font-family: unset !important;
+}
+#demo{
+font-size: 1rem;
+width: 12rem;
+}
+#frase {
+height: 1.5rem;
+margin-top: -0.5rem;
+margin-bottom: 1rem;
+}
+#prev{
+font-family: unset !important;
+font-size: 1.2rem;
+width: 10rem;
+}
+#next{
+font-family: unset !important;
+font-size: 1rem;
+height: 3rem;
+width: 11rem;
+}
+#elem{
+height: 4rem;
+font-size: 1.1rem;
+width: 12rem;
+margin-left: -1rem;
+}
+#enter{
+font-size: 1rem;
+width: 13.3rem;
+margin-left: -0.6rem;
+height: 4rem;
+}
+#enter:focus{
+height: 4rem;
+}
+#check{
+font-size: 0.9rem;
+width: 10rem;
+}
+h3,h1,h5{
+font-size: 1rem !important;
+}
+#img {
+width: 4rem;
+margin-left: 3rem;
+margin-top: -4.5rem;
+}
+
+#offer{
+width:11rem !important;
+}
+.ui-mobile .ui-page{
+background: url(images/beach.jpg) no-repeat;
+background-size: cover;
+}		
+}
+@media (min-width: 320px ) and (max-width: 640px) {
+body{
+font-family: unset !important;
+}
+.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-c {
+width: 1%;
+}
+.ui-grid-b>.ui-block-b {
+width: 98%;
+}	
+
+#demo{
+font-size: 1.1rem;
+width: 16rem;
+padding-bottom: 0.6rem;
+}
+#prev{
+font-family: unset !important;
+font-size: 1.2rem;
+width: 10rem;
+position: revert;
+}
+#next{
+font-family: unset !important;
+font-size: 1.2rem;
+height: 3.5rem;
+width: 15rem;
+
+}
+#elem{
+height: 5rem;
+width: 15rem;
+font-size: 1.3rem;
+}
+#enter{
+font-size: 1.1rem;
+width: 17rem;
+}
+#check{
+font-size:1rem;
+width: 15rem;
+}
+h3,h1{
+font-size: 1.1rem !important;
+padding-top: 1rem;
+}
+#img {
+width: 5rem;
+margin-left: 5.7rem;
+margin-top: -5.5rem;
+}
+
+#offer{
+width:15rem;
+}
+.ui-mobile .ui-page{
+background: url(images/beach.jpg) no-repeat;
+//background-position-x: -40rem;
+background-size: cover;
+}
+}
+@media (min-width: 600px ) and (max-width: 1280px) {
+	.ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-c {
+width: 5%;
+}
+.ui-grid-b>.ui-block-b {
+width: 90%;
+}	
+.ui-mobile .ui-page
+{
+background: url(images/beach.jpg) no-repeat;
+background-position-x: -33rem;
+}
+#img {
+width: 7rem;
+margin-left: 12rem;
+margin-top: -2.3rem;
+}
+	
+
+h3{
+font-size:1.3rem !important;
+}
+h1{
+font-size:1.4rem !important;
+padding-top: 0.7rem;
+color:white;
+}
+	
+}
   #menu{
 position:absolute;	
 text-shadow:0 00;
