@@ -2,6 +2,13 @@ body{
 font-family: Georgia !important;
 text-align:center;
 }
+.ui-link{
+	color:white;
+}
+a {
+color:white !important;
+
+}
 .ui-mobile .ui-page
 {
 background: url(beach.jpg) no-repeat;
@@ -319,3 +326,4 @@ width: 80%;
 width: 19rem;
 }
 }
+
