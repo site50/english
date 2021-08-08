@@ -2,6 +2,9 @@
 position:absolute;	
 text-shadow:0 00;
 }
+#moz_mob{
+  display: none;
+}
 .dropdown-submenu{position:relative;}
 .dropdown-submenu>.dropdown-menu
 {top:0;
