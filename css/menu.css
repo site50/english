@@ -103,3 +103,25 @@ position: absolute;
 left: 97%;
 }
 }
+@media (min-width: 300px) and (max-width: 800px)  {
+ @-moz-document url-prefix() {
+ #moz_mob {
+     display: block;
+  }
+  #lapt{
+	  display:none;
+  }
+}
+}
+@media screen and (max-width: 1400px) {
+	 @-moz-document url-prefix() {
+ #moz_mob {
+     display: block;
+  }
+  #lapt{
+	  display:none;
+  }
+}
+	
+}
+ 
