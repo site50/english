@@ -2,6 +2,9 @@
 position:absolute;	
 text-shadow:0 00;
 }
+#moz_mob{
+  display: none;
+}
 .dropdown-submenu{
 padding: 5px 6px;
 position:relative;
@@ -151,4 +154,26 @@ line-height: 1;
 #sub {
 margin-left: 5.3rem;
 }
+}
+
+@media (min-width: 300px) and (max-width: 800px)  {
+ @-moz-document url-prefix() {
+ #moz_mob {
+     display: block;
+  }
+  #lapt{
+	  display:none;
+  }
+}
+}
+@media screen and (max-width: 1400px) {
+	 @-moz-document url-prefix() {
+ #moz_mob {
+     display: block;
+  }
+  #lapt{
+	  display:none;
+  }
+}
+	
 }
