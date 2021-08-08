@@ -15,9 +15,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 <script src="jquery.ui.touch-punch.js"></script>	
-
-
+  <div id="box256" >ONCLICK</div>
+<div id="box257" style="display:none;">257
+  <div id="box258" style="display:none;">258</div>
+    </div>
+  
 <script>
+  $(document).ready(function(){
+  $("#box256").on("click", function(){
+   $( "#box257" ).show( );
+  $("#box257").html('<b><p><a href="your_menu.html" rel="external">Упражнение выполнено</p></b>Переходи на другую страницу</a>').css({'background-color':'white','color':'green'});
+$("#box257").hover(function(){
+$(this).html("<b><p><a href='your_menu.html' rel='external'>Exercise complete</p> Go to menu</a></b>");
+}, function() {
+$(this).html("<b><p>Упражнение выполнено </p>Переходи в меню</b>");
+});
+  });
+});
 
 </script>
 
