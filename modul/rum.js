@@ -44,7 +44,7 @@ $('#rum').show(1000);
 $('#demo').html('<b><p><a href="your_menu.html" rel="external">Упражнение выполнено</p></b>Переходи на другую страницу</a>');
 $('#rum').css({'background-color':'white','color':'green'});
 $("#demo").hover(function(){
-$(this).html("<b><p><a href="your_menu.html" rel="external">Exercise complete</p> Go to menu</a></b>");
+$(this).html("<b><p><a href='your_menu.html' rel="external">Exercise complete</p> Go to menu</a></b>");
 }, function() {
 $(this).html("<b><p>Упражнение выполнено </p>Переходи в меню</b>");
 });
