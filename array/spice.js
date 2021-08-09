@@ -1,7 +1,7 @@
 arr1=[
-'Solar System ',
+'Solar System',
 'planet',
-'Universe ',
+'Universe',
 'Galaxy',
 'black hole',
 'star',
