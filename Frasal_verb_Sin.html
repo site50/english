@@ -97,7 +97,7 @@ fG();
 });
 check.addEventListener('click', function (event)
 {	
-if ((arr1[i]+'/'+arr2[i]==enter.value)||(arr1[i]+'/<br>'+arr2[i].toLowerCase()==enter.value.toLowerCase()))
+if ((arr1[i]+'/'+arr2[i]==enter.value)||(arr1[i]+'/'+arr2[i]==enter.value.toLowerCase())||(arr1[i]+'/'+arr2[i]==enter.value.toUpperCase()))
 {
 $( '#check' ).text( "Ответ верный" ).css('background','green');
 $("#img").show(1000);
