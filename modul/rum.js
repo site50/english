@@ -41,7 +41,7 @@ count++;
 if (count==c.length) {
 count++;
 $('#rum').show(1000);
-$('#demo').html('<b><p><a href="your_menu.html" rel="external">Упражнение выполнено</p></b>Переходи на другую страницу</a>');
+$('#demo').html('<b><a href="your_menu.html" rel="external">Упражнение выполнено</a><br></br><a href="your_menu.html" rel="external">Переходи на другую страницу</a></b>');
 $('#rum').css({'background-color':'white','color':'green'});
 $("#demo").hover(function(){
 $(this).html("<b><a href='your_menu.html' rel='external'>Exercise complete</a><br></br><a href='your_menu.html' rel='external'> Go to menu</a></b>");
