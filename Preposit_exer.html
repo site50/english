@@ -120,14 +120,15 @@ count++;
 if (count==c.length) {
 count++;
 $('#rum').show(1000);
-$('#demo').html('<b><p><a href="your_menu.html" rel="external">Упражнение выполнено</p></b>Переходи на другую страницу</a>');
-$('#rum').css({'background-color':'white','color':'green'});
-$("#demo").hover(function(){
-$("#demo").html("<a href='your_menu.html' rel='external'><b>Exercise complete</a><br></br><a href='your_menu.html' rel='external'> Go to menu</b></a>");
+$('#rum').html('<a href="your_menu.html" rel="external">Упражнение выполнено<br></br>МЕНЮ</a>');
+$('#rum').css({'background-color':'white','color':'green','text-align':'center', 'font-weight': '100','font-size': '0.8rem',
+    'line-height': '1', 'width': '7.8rem'});
+$("#rum").hover(function(){
+$("#rum").html("<a href='your_menu.html' rel='external'>Exercise complete<br></br> MENU</a>");
 }, function() {
-$("#demo").html("<a href='your_menu.html' rel='external'><b>Упражнение выполнено </a><br></br><a href='your_menu.html' rel='external'>Переходи в меню</b></a>");
+$("#rum").html('<a href="your_menu.html" rel="external">Упражнение выполнено<br></br>МЕНЮ</a>');
 });
-}    }	
+}      }	
 })
 })
 });
