@@ -41,14 +41,12 @@ count++;
 if (count==c.length) {
 count++;
 $('#rum').show(1000);
-$('#demo').html('<b><a href="your_menu.html" rel="external">Упражнение выполнено</a><br></br><a href="your_menu.html" rel="external">Переходи на другую страницу</a></b>');
-$('#rum').css({'background-color':'white','color':'green'});
-$("#demo").hover(function(){
-$("#demo").html("<a href='your_menu.html' rel='external'><b>Exercise complete</a><br></br><a href='your_menu.html' rel='external'> Go to menu</b></a>");
-}, function() {
-$("#demo").html("<a href='your_menu.html' rel='external'><b>Упражнение выполнено </a><br></br><a href='your_menu.html' rel='external'>Переходи в меню</b></a>");
-});
+$('#rum').html('<a href="your_menu.html" rel="external">Упражнение выполнено<br></br>МЕНЮ</a>');
+$('#rum').css({'background-color':'white','color':'green','text-align':'center', 'font-weight': '100','font-size': '0.8rem',
+    'line-height': '0.8', 'width': '7.5rem','padding-top': '0.7rem','padding-bottom': '0.7rem','height': '3rem'});
+
 }    }	
+
 })
 })
 });
