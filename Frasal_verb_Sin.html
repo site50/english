@@ -4,10 +4,9 @@
 <title>Phrasal verbs with synonyms</title>
 <meta charset=utf-8 >
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script src="jquery.ui.touch-punch.js"></script>	
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <link href="int.geog.sp.css" rel="stylesheet">
 <link href="css/menu1.css" rel="stylesheet">
 <script src='array/sin.ver.js'></script>
@@ -95,19 +94,21 @@ document.getElementById("elem2").innerHTML =arr1[i]+'/<br>'+arr2[i];
 fG();
 }
 });
-	          var fewF2 = function (event) {
-		        if ((arr1[i]+'/'+arr2[i]==enter.value)||(arr1[i]+'/'+arr2[i]==enter.value.toLowerCase())||(arr1[i]+'/'+arr2[i]==enter.value.toUpperCase()))
-						{
-						$( '#check' ).text( "Ответ верный" ).css('background','green');
-						$("#img").show(1000);
-						}
-						else {
-						$("#input").show(1000);
-						$( '#check' ).text( "Попробуйте еще раз" ).css('background','#d65b18');
-						}
-		        }
-		        check.addEventListener('click', fewF2, false);
-		        enter.addEventListener('keyup', fewF2, false);	
+		var fewF2 = function (event) {
+		if ((arr1[i]+'/'+arr2[i]==enter.value)||(arr1[i]+'/'+arr2[i]==enter.value.toLowerCase())||(arr1[i]+'/'+arr2[i]==enter.value.toUpperCase()))
+		{
+		$( '#check' ).text( "Ответ верный" ).css('background','green');
+		$("#img").show(1000);
+		}
+		else {
+		$("#input").show(1000);
+		$( '#check' ).text( "Попробуйте еще раз" ).css('background','#d65b18');
+		}
+		}
+		check.addEventListener('click', fewF2, false);
+		enter.addEventListener('keyup', fewF2, false);			
+			
+			
 prev.addEventListener('click', function() {
 i--;
 if (i == -1) {
