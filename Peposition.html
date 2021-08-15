@@ -145,16 +145,17 @@ document.getElementById("box5").style.display='block';
 }
 });
 let check = document.querySelector('#check');
-check.addEventListener('click', function (event) {
-console.log(arr1[i].n+arr1[i].n1+arr1[i].n2);
-if (arr1[i].n1==enter.value)
-{console.log(arr1[i].n+',CHECK3'+arr1[i].n1);
-$("#input, #error").show(1000)
-$( '#error' ).text( "Ответ верный!" );
-}
-else {document.getElementById("error").innerHTML='Неверно, попробуйте еще раз';}
-document.getElementById("error").style.display='block';
-});
+    var fewF1 = function (event) {
+		if (arr1[i].n1==enter.value)
+		{console.log(arr1[i].n+',CHECK3'+arr1[i].n1);
+		$("#input, #error").show(1000)
+		$( '#error' ).text( "Ответ верный!" );
+		}
+		else {document.getElementById("error").innerHTML='Неверно, попробуйте еще раз';}
+		document.getElementById("error").style.display='block';
+		}
+		check.addEventListener('click', fewF1, false);
+		enter.addEventListener('keyup', fewF1, false);
 });
 prev.addEventListener('click', function() {
 i--;
