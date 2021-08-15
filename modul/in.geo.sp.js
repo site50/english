@@ -28,17 +28,18 @@ document.getElementById("demo1").innerHTML =arr2[i];
 {fG();
 }
 });
-check.addEventListener('click', function (event) {	
-if ((arr1[i]==enter.value)||(arr1[i].toLowerCase() == enter.value.toLowerCase()))
-{
-$( '#check' ).text( "Ответ верный" ).css('background','green');
-$("#img").show(1000);
-}
-else {
-$("#input").show(1000);
-$( '#check' ).text( "Попробуйте еще раз" ).css('background','#d65b18');
-}
-});
+        var fewF = function (event) {if ((arr1[i]==enter.value)||(arr1[i].toLowerCase() == enter.value.toLowerCase()))
+				{
+				$( '#check' ).text( "Ответ верный" ).css('background','green');
+				$("#img").show(1000);
+				}
+				else {
+				$("#input").show(1000);
+				$( '#check' ).text( "Попробуйте еще раз" ).css('background','#d65b18');
+				}
+				}
+				check.addEventListener('click', fewF, false);
+				enter.addEventListener('keyup', fewF, false);
 
 prev.addEventListener('click', function() {
 i--;
