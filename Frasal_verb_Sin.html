@@ -95,19 +95,19 @@ document.getElementById("elem2").innerHTML =arr1[i]+'/<br>'+arr2[i];
 fG();
 }
 });
-check.addEventListener('click', function (event)
-{	
-if ((arr1[i]+'/'+arr2[i]==enter.value)||(arr1[i]+'/'+arr2[i]==enter.value.toLowerCase())||(arr1[i]+'/'+arr2[i]==enter.value.toUpperCase()))
-{
-$( '#check' ).text( "Ответ верный" ).css('background','green');
-$("#img").show(1000);
-}
-else {
-$("#input").show(1000);
-$( '#check' ).text( "Попробуйте еще раз" ).css('background','#d65b18');
-}
-}
-);
+	          var fewF2 = function (event) {
+		        if ((arr1[i]+'/'+arr2[i]==enter.value)||(arr1[i]+'/'+arr2[i]==enter.value.toLowerCase())||(arr1[i]+'/'+arr2[i]==enter.value.toUpperCase()))
+						{
+						$( '#check' ).text( "Ответ верный" ).css('background','green');
+						$("#img").show(1000);
+						}
+						else {
+						$("#input").show(1000);
+						$( '#check' ).text( "Попробуйте еще раз" ).css('background','#d65b18');
+						}
+		        }
+		        check.addEventListener('click', fewF2, false);
+		        enter.addEventListener('keyup', fewF2, false);	
 prev.addEventListener('click', function() {
 i--;
 if (i == -1) {
