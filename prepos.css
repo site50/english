@@ -1,0 +1,429 @@
+body {
+	background: url(images/beach.jpg) ;
+	margin: 0; /* Убираем отступы в браузере */
+	text-align: center;
+	font-family: Georgia !important;
+	min-height:100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+.input-group{
+	margin-top: 6rem;
+}
+#box5{
+	margin-top: -1rem;
+}
+#error{
+	color: white;
+	font-size: 2.4vw;
+	padding-top: 11rem;
+}
+#enter{
+	text-align:center;
+	height: 6rem;
+	width: 10rem;
+	border-radius: 23px;
+	font-size: 2vw;
+	font-family: Georgia !important;
+	margin-top: 1.6rem;
+	background-color:#f1874edb;
+	border: 5px solid #f94a27;
+	color:white;
+}
+#enter:focus{
+	background-color: yellow;
+	border-radius: 23px;
+	border: 5px solid Tomato;
+	color: green;
+}
+#next,#prev,#check,#begin{
+	background-color:tomato;
+	color:white;
+	font-size:2vw;
+	margin-right: auto;
+	margin-left: auto;
+	border: 2px solid #4CAF50;
+}
+#prev{
+	background-color:SkyBlue;
+	margin-top: 2.5rem;
+}
+#begin{
+	height: 9rem;
+	width: 35rem;
+	border-radius: 23px;
+}
+#next,#check{
+	font-family: Georgia !important;
+}
+#check{
+	margin-top: 2vw;
+}
+#elem,#demo{
+	background-color: LimeGreen;
+	height: 5vw;
+	border-radius: 23px;
+	border: 5px solid Tomato;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 60rem;
+	font-size: 2.3rem;
+	text-align: center;
+	display: flex;
+}
+#elem1,#demo1{
+	margin: auto;
+}
+#text{
+	width: 60rem;
+	display: flex;
+	margin-top: 2rem;
+}
+#pos
+{margin-left: -3rem;
+	font-weight: 600;
+}
+h3{ 
+	font-size: 2.6rem;
+	margin: auto;
+}
+#demo1 {text-align: end;
+	display: flex;
+}
+#n{
+	padding-right: 1rem;
+}					  
+#n1 {
+	background-color: #f7ea06;
+	text-align: center;
+	color: green;
+	border: 2px solid tomato;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-weight: 550;
+}
+#n2{
+	text-align: left;
+	padding-left: 1rem;
+}
+#prepos{
+	background-color:tomato;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 60rem;
+	font-size: 2rem;
+	margin-top: 1rem;
+	line-height: 1.6;
+	border: solid 2px #f3f3f3;
+	border-radius: 2rem;
+}
+#frase1{
+	height: 7rem;
+}
+h1{
+	font-size: 3rem;
+}
+#img{
+	width: 18rem;
+	margin-top: 24rem;
+	transition-duration: 15s;
+}
+#box3{
+	height: 5rem;
+}
+#offer{
+	background-color: #ff00118c;
+	height: 14rem;
+	width: 22rem;
+	font-size: 1.5rem;
+	border-radius: 23px;
+	color: white;
+}
+#yes{
+	background-color:#cbe61d;
+	width: 9rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.3rem;
+	padding-bottom: 1ren;
+	border-radius: 23px;
+	margin-top: 2rem;
+}
+#noy{
+	background-color: #800003;
+	width: 9rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.3rem;
+	border-radius: 23px;
+	margin-top: 1rem;
+}
+h5{
+	font-size: 2rem;
+}
+@media (min-width: 240px ) and (max-width: 320px) {
+	h1 {
+		font-size: 1.6rem;
+	}
+	#begin {
+		font-size: 2rem;
+		width: 20rem;
+		height: 6rem;
+	}
+	#demo, #prepos {
+		width: 25rem;
+		font-size: 1.3rem;
+		margin-left: -2rem;
+	}
+	#prepos {
+		font-size:1.1rem;
+		margin-top: 1.5rem;
+	}
+	#text {
+		width: 23rem;
+		margin-left: -2rem;
+	}
+	h3{
+		font-size: 1rem;
+		margin-top: 0.7rem;
+	}
+	#n1{
+		height: 2.5rem;
+	}
+	#pos {
+		margin-left: -1rem;
+	}
+	#demo{
+		height: 5rem;
+	}
+	#prev,#next{
+		font-size: 2rem;
+	}
+	#prev{
+		margin-top: -1rem;
+	}
+	#elem {
+		height: 6rem;
+		width: 25rem;
+		font-size: 1.5rem;
+		margin-left: -2rem;
+	}
+	#enter {
+		height: 13vw;
+		width: 69vw;
+		font-size: 1.6rem;
+		margin-top: 0.3rem;
+	}
+	#check{
+		font-size: 2rem;
+	}
+	#error{
+		font-size: 3rem;
+		padding-top: 1rem;
+	}
+	#img{
+		margin-top: 1rem;
+	}
+	#box7 {
+		width: 5rem;
+		height: 5rem;
+		margin-left: -1rem;
+		font-size: 1.5rem;
+	}
+	.dropdown-menu {
+		margin-left: -0.9rem;
+		margin-top: -1rem;	
+		min-width: 0px;
+	}
+	.dropdown-menu>li>a {
+		font-size: 1.1rem;
+	}
+	.dropdown-submenu:hover> .dropdown-menu {
+		margin-left: -1.3rem;
+	}
+}	
+
+@media (min-width: 320px ) and (max-width: 740px) {
+	#prepos{
+		width: 30rem;
+		font-size: 1.2rem;
+		margin-top: 4.5rem;
+	}
+	#menu{
+		margin-top: 1rem;
+	}
+	#begin
+	{font-size: 3rem;
+		width: 29rem;
+	}
+	#demo {
+		width: 30rem;
+		font-size: 1.2rem;
+		height: 5rem;
+	}
+	#text {
+		width: 33rem;
+	}
+	#n1{
+		height: 2.6rem;
+	}
+	#elem{
+		height: 6rem;
+		width: 30rem;
+		font-size: 1.3rem;
+	}
+	#prev{
+		font-size: 2rem;
+		margin-top: 2.5rem;
+	}
+	#next{
+		height: 4rem;
+		width: 7.2rem;
+		font-size: 2rem;
+	}
+	h1 {
+		font-size: 2.3rem;
+	}
+	h3{
+		font-size: 1.3rem;
+		padding-left: 2rem;
+	}
+	#check {
+		margin-top: 5vw;
+		font-size: 2rem;
+		height: 4rem;
+	}
+	#enter {
+		height: 5rem;
+		width: 9rem;
+		font-size: 2.5rem;
+		margin-top: 1rem;
+	}
+	#error {
+		font-size: 2rem;
+		padding-top: 1rem;
+	}
+	#img {
+		margin-top:0.1rem;
+	}
+}
+@media (min-width: 375px ) and (max-width: 667px) {
+	#prepos,#elem,#demo {
+		width: 36rem;
+		font-size: 1.5rem;
+	}
+	#prepos{
+		margin-top: 3.5rem;	
+	}
+	#elem,#demo{
+		font-size: 1.8rem;
+	}
+	#demo{
+		height: 6rem;
+	}
+	h1{
+		font-size: 2.7rem;
+	}	
+}
+@media (min-width: 750px ) and (max-width: 1280px) {
+	h1{
+		font-size: 3rem;
+	}
+	h5{
+		font-size: 3rem;
+	}
+	h3{
+		margin-top: 1rem;
+	}
+	#offer{
+		height: 19rem;
+		width: 26rem;
+	}
+	#next, #prev, #check, #begin {
+		font-size: 4vw;
+	}
+	#begin {
+		height: 11rem;
+		width: 42rem;
+		font-size: 4rem;
+	}
+	#demo,#elem,#prepos {
+		font-size: 2.4rem;
+		width: 59rem;
+		height: 8rem;
+	}
+	#prev {
+		margin-top: 2rem;
+	}
+	#next{
+		height: 8vw;
+		margin-top: 0.1rem;
+	}
+	#elem {
+		text-align: center;
+		display: flex;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	#elem1{
+		margin: auto;
+	}
+	#prev{
+		margin-top: 2rem;
+	}
+	#enter{
+		width: 12rem;
+		font-size: 2.8rem;
+		height: 6rem;
+	}
+	#check{
+		height: 7rem;
+	}
+	#error{
+		font-size: 4vw;
+		padding-top: 1rem;
+	}
+	#img{
+		margin-top: 1rem;
+	}
+	.dropdown-menu{
+		font-size: 2rem;
+	}
+	.dropdown-menu > li > a {
+		font-size: 2rem;
+	}
+}
+@media (min-width: 800px ) and (max-width: 1440px) {
+	h1{
+		font-size:2.1rem;
+	}
+	#begin{
+		height: 11rem;
+		width: 43rem;
+	}
+	#demo {
+		font-size: 3rem;
+		width: 60rem;
+		margin-top: 1rem;
+	}2.
+	
+	#elem {
+		font-size: 3rem;
+		width: 60rem !important;
+		height: 7rem;
+	}
+	#next {
+		margin-top: -0.3rem;	
+		height: 6rem;
+	}
+	#next, #prev, #check, #begin {
+		font-size: 3rem;
+	}
+	h3{
+		font-size: 2.4rem;
+		color: white;
+	}
+	img{
+		margin-top: 5rem !important;
+	}
+}
